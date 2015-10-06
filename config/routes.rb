@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+#Used to be:  get 'home/index' #This tells our app to route our index.html.erb file to home/index
+
+root 'home#index'   #Use '#' to designate that page as a root page!
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
