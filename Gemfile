@@ -39,6 +39,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'sass', '~> 3.4.18'
+
 group :development, :test do
 	gem 'sqlite3' #telling the app to use sqlite3 db on the local environment
 end
