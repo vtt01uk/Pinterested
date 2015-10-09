@@ -2,13 +2,14 @@
 <html>
 <head>
   <title>Workspace</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
 </head>
+
 <body>
-<%= render 'home/render' %>
-<%= yield </%>  <!--This tag is calling the contents of the page and outputting it-->
+<% render 'home/header' %> <!--render the header partial. You should see the header links at the top of the screen and if you click the 'about us' link, you should see the header links at the top of it too!-->
+<%= yield %>  <!--This tag is calling the contents of the page and outputting it-->
 
 </body>
 </html>
