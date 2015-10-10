@@ -10,7 +10,8 @@
 <body>
 <%= render 'home/header' %>
  <!--render the header partial. You should see the header links at the top of the screen and if you click the 'about us' link, you should see the header links at the top of it too!-->
-<%= yield %>  <!--This tag is calling the contents of the page and outputting it-->
-
+<div class="container">
+	<%= yield %>  <!--This tag is calling the contents of the page and outputting it-->
+</div>
 </body>
 </html>
