@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
+gem 'rails', '4.1.6'
 # DO NOT Use sqlite3 as the database for Active Record
 #Why? because once deployed on Heroku, that database is not allowed.
 #gem 'sqlite3'
