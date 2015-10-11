@@ -11,6 +11,10 @@
 <%= render 'home/header' %>
  <!--render the header partial. You should see the header links at the top of the screen and if you click the 'about us' link, you should see the header links at the top of it too!-->
 <div class="container">
+	<!--basic Ruby loop; for each flash message, output the message in a CSS div with class 'alert alert-info'-->
+	<% flash.each do |name, msg| %>
+	<%= content_tag(:div, msg, class: "alert alert-info") %>
+	<% end %>
 	<%= yield %>  <!--This tag is calling the contents of the page and outputting it-->
 </div>
 </body>

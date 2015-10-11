@@ -75,4 +75,9 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Here, we are telling our app to use Heroku for our production environment.
+  config.action_mailer.default_url_options = {
+    host: 'pinterested99.herokuapp.com'
+  }
 end

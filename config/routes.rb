@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
 #Used to be:  get 'home/index' #This tells our app to route our index.html.erb file to home/index
 
 root 'home#index'   #Use '#' to designate that page as a root page!
