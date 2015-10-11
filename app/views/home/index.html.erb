@@ -1,8 +1,10 @@
-
-<!--<%= link_to 'Home', root_path %>
-<%= link_to 'About Us', home_about_path %>-->
 <div class="jumbotron">
 <h1>Welcome To My App</h1>
 <p>It's going to kick @$$</p>
 <!--.html.erb tells the app to allow us to use embedded Ruby (.erb) on each web page-->
+<%= link_to 'About', home_about_path, class: 'btn btn-default btn-md' %>
+<!--this tells Rails that this isnt just a link; its a button link
+and the class stuff come from code from getbootstrap.com-->
+<%= link_to 'Home', root_path, class: 'btn btn-primary btn-md' %>
+
 </div>
